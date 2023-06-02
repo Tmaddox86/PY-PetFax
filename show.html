@@ -8,13 +8,10 @@
     <link rel = "stylesheet" href="../../static/style.css"> 
 </head>
 <body>
-    <h1>Welcome to PetFax</h1>
-        {% for pet in pets %}
-            <h2><a href={{pets/pet_id}}></a>{{ pet.pet_name }}</h2>
-            <img src="{{ pet.pet_photo }}" alt="Photo of pet"/>
-        {% endfor %}
-
-        <a href= "/facts/new">Add Your Fact</a>
-        
+    <h2></h2>{{pet.pet_name}}</h2>
+    <div>
+        {{pet.pet_fact}}
+    </div>
+    <img src="{{ pet.pet_photo }}"/>
 </body>
 </html>
